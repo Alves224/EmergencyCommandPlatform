@@ -3,6 +3,8 @@ import { Header } from "@/components/Layout/Header";
 import { Navigation } from "@/components/Layout/Navigation";
 import { DashboardView } from "@/components/Dashboard/DashboardView";
 import { IncidentsView } from "@/components/Incidents/IncidentsView";
+import { useI18n } from "@/providers/I18nProvider";
+import { useAuth } from "@/providers/AuthProvider";
 
 // Mock user data - in production this would come from authentication
 const mockUser = {
@@ -12,11 +14,13 @@ const mockUser = {
 };
 
 const Index = () => {
+  const { lang, setLang } = useI18n();
+  const { user } = useAuth();
   const [activeModule, setActiveModule] = useState('dashboard');
-  const [isArabic, setIsArabic] = useState(false);
-
+  
+  const isArabic = lang === 'ar';
   const handleLanguageToggle = () => {
-    setIsArabic(!isArabic);
+    setLang(isArabic ? 'en' : 'ar');
   };
 
   const renderActiveModule = () => {
@@ -126,16 +130,16 @@ const Index = () => {
           onLanguageToggle={handleLanguageToggle}
           isArabic={isArabic}
         />
-        <div className="flex flex-1 overflow-hidden">
-          <Navigation 
-            activeModule={activeModule}
-            onModuleChange={setActiveModule}
-            isArabic={isArabic}
-          />
-          <main className="flex-1 overflow-y-auto bg-muted/30">
-            {renderActiveModule()}
-          </main>
-        </div>
+      <div className="flex flex-1 overflow-hidden">
+        <Navigation 
+          activeModule={activeModule}
+          onModuleChange={setActiveModule}
+          isArabic={isArabic}
+        />
+        <main className="flex-1 overflow-y-auto bg-muted/30">
+          {renderActiveModule()}
+        </main>
+      </div>
       </div>
     </div>
   );
