@@ -1,0 +1,29 @@
+[
+  {
+    "id": "258fc9b0-c2eb-495e-849e-5d807d3eb754",
+    "callsign": "Y06",
+    "type": "VehiclePatrol",
+    "site": "YST",
+    "status": "Available",
+    "lastGeo": {"lat": 23.991, "lng": 38.223},
+    "capabilities": ["FirstAid", "FireExt", "Intrusion"]
+  },
+  {
+    "id": "36adf0e2-d664-46c4-ba19-cef3c2da664a", 
+    "callsign": "Y09",
+    "type": "VehiclePatrol",
+    "site": "YST",
+    "status": "Available",
+    "lastGeo": {"lat": 23.989, "lng": 38.221},
+    "capabilities": ["Perimeter", "Traffic"]
+  },
+  {
+    "id": "2b5ae142-2565-4938-933f-9aee7c87fd07",
+    "callsign": "N14", 
+    "type": "FootPatrol",
+    "site": "NGL",
+    "status": "Busy",
+    "lastGeo": {"lat": 24.0, "lng": 38.2},
+    "capabilities": ["AdminArea", "Escort"]
+  }
+]
