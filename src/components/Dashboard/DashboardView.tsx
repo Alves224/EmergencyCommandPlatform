@@ -25,7 +25,7 @@ export const DashboardView = ({ isArabic }: DashboardViewProps) => {
       id: '40a27cb5-a26d-4258-b4c3-206aae8ac4f0',
       type: 'Fire',
       priority: 'High',
-      site: 'YST',
+      site: 'SITE-A',
       status: 'Open',
       openedAt: '2025-09-03T19:55:31.770534Z',
       commander: 'Incident Commander'
@@ -35,13 +35,13 @@ export const DashboardView = ({ isArabic }: DashboardViewProps) => {
   const recentActivities = [
     { 
       time: '19:55', 
-      action: isArabic ? 'تم إنشاء حادث حريق في YST' : 'Fire incident created at YST',
+      action: isArabic ? 'تم إنشاء حادث حريق في الموقع أ' : 'Fire incident created at Site A',
       type: 'incident',
       priority: 'high'
     },
     { 
       time: '19:54', 
-      action: isArabic ? 'تم تفعيل فريق Y06' : 'Unit Y06 activated',
+      action: isArabic ? 'تم تفعيل فريق P06' : 'Unit P06 activated',
       type: 'dispatch',
       priority: 'medium'
     },
@@ -72,7 +72,7 @@ export const DashboardView = ({ isArabic }: DashboardViewProps) => {
         </div>
         <div className="relative z-10">
           <h1 className="text-3xl font-bold mb-2">
-            {isArabic ? "منصة قيادة الطوارئ" : "YSOD Emergency Command Platform"}
+            {isArabic ? "منصة قيادة الطوارئ" : "Emergency Command Platform"}
           </h1>
           <p className="text-primary-foreground/90 text-lg mb-4">
             {isArabic ? 
@@ -291,7 +291,7 @@ export const DashboardView = ({ isArabic }: DashboardViewProps) => {
 
       {/* Footer */}
       <div className="text-center py-4 text-xs text-muted-foreground border-t border-border">
-        Saudi Aramco: Company General Use
+        Company Confidential - Internal Use Only
       </div>
     </div>
   );

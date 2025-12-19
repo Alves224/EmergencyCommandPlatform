@@ -1,6 +1,5 @@
-// YSOD Emergency Command Platform - Broadcast Alerts Component
+// Emergency Command Platform - Broadcast Alerts Component
 // Multi-channel emergency communications
-// Saudi Aramco: Company General Use
 
 import React, { useState } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
@@ -19,7 +18,7 @@ interface BroadcastAlertsProps {
   recentAlerts?: Notification[]
 }
 
-const SITE_OPTIONS: (SiteCode | 'ALL')[] = ['ALL', 'NGL', 'COT', 'YRD', 'BP', 'HUB', 'YST']
+const SITE_OPTIONS: (SiteCode | 'ALL')[] = ['ALL', 'SITE-A', 'SITE-B', 'SITE-C', 'SITE-D', 'SITE-E', 'SITE-F']
 const ROLE_OPTIONS: (UserRole | 'ALL')[] = ['ALL', 'IncidentCommander', 'Dispatcher', 'FieldResponder', 'SecuritySupervisor', 'ComplianceLegal', 'Viewer']
 
 export function BroadcastAlerts({ currentUser, onSendBroadcast, recentAlerts = [] }: BroadcastAlertsProps) {

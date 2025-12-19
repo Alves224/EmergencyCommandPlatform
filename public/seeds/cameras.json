@@ -2,27 +2,27 @@
   {
     "id": "6453bcbb-c519-4701-a67b-4d9b1f39be0b",
     "name": "Gate 24 PTZ",
-    "site": "YST",
+    "site": "SITE-A",
     "location": {"lat": 23.9901, "lng": 38.2235},
-    "rtspUrl": "rtsp://camera.yst.aramco.sa/gate24",
+    "rtspUrl": "rtsp://camera.site-a.local/gate24",
     "ptzCapable": true,
     "overlays": []
   },
   {
     "id": "1db76bde-d1e3-4798-80da-9212669ed34b",
     "name": "Jetty 3 Fixed",
-    "site": "YST", 
+    "site": "SITE-A", 
     "location": {"lat": 23.9889, "lng": 38.2202},
-    "rtspUrl": "rtsp://camera.yst.aramco.sa/jetty3",
+    "rtspUrl": "rtsp://camera.site-a.local/jetty3",
     "ptzCapable": false,
     "overlays": []
   },
   {
     "id": "990deae2-827a-410b-a2fb-38d12a65cda5",
     "name": "Admin Entrance PTZ",
-    "site": "NGL",
+    "site": "SITE-B",
     "location": {"lat": 24.0005, "lng": 38.2001},
-    "rtspUrl": "rtsp://camera.ngl.aramco.sa/admin",
+    "rtspUrl": "rtsp://camera.site-b.local/admin",
     "ptzCapable": true,
     "overlays": []
   }

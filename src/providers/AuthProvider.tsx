@@ -1,6 +1,5 @@
-// YSOD Emergency Command Platform - Authentication Provider
+// Emergency Command Platform - Authentication Provider
 // Mock implementation - replace with real SSO/OIDC
-// Saudi Aramco: Company General Use
 
 import React, { createContext, useContext, useMemo, useState, useEffect } from 'react'
 import type { User } from '@/types'
@@ -17,30 +16,30 @@ const mockUsers: User[] = [
   {
     id: '875e23ef-7cc3-4fe4-8ba9-bef13d456db0',
     name: 'Incident Commander',
-    email: 'ic@aramco.sa',
+    email: 'ic@company.com',
     role: 'IncidentCommander',
-    sites: ['NGL', 'COT', 'YRD', 'BP', 'HUB', 'YST']
+    sites: ['SITE-A', 'SITE-B', 'SITE-C', 'SITE-D', 'SITE-E', 'SITE-F']
   },
   {
     id: 'e9b8604e-5314-4772-ae55-d90ea6f43b17',
     name: 'Dispatcher 1',
-    email: 'dispatcher1@aramco.sa',
+    email: 'dispatcher1@company.com',
     role: 'Dispatcher',
-    sites: ['YST', 'NGL', 'COT']
+    sites: ['SITE-A', 'SITE-B', 'SITE-C']
   },
   {
     id: '7ba8f419-674e-4f61-8512-a5c7eb25c880',
     name: 'Field Responder 1',
-    email: 'responder1@aramco.sa',
+    email: 'responder1@company.com',
     role: 'FieldResponder',
-    sites: ['YST']
+    sites: ['SITE-A']
   },
   {
     id: 'a1e6b90b-be52-4152-aa62-4a0fd0798a24',
     name: 'Security Supervisor',
-    email: 'supervisor@aramco.sa',
+    email: 'supervisor@company.com',
     role: 'SecuritySupervisor',
-    sites: ['YST', 'YRD']
+    sites: ['SITE-A', 'SITE-B']
   }
 ]
 
