@@ -10,7 +10,7 @@ import { useAuth } from "@/providers/AuthProvider";
 const mockUser = {
   name: "Incident Commander",
   role: "Incident Commander", 
-  sites: ["NGL", "COT", "YRD", "BP", "HUB", "YST"]
+  sites: ["SITE-A", "SITE-B", "SITE-C", "SITE-D", "SITE-E", "SITE-F"]
 };
 
 const Index = () => {

@@ -40,7 +40,7 @@ export const Header = ({ user, onLanguageToggle, isArabic }: HeaderProps) => {
               {isArabic ? "منصة قيادة الطوارئ" : "Emergency Command Platform"}
             </h1>
             <p className="text-xs text-muted-foreground">
-              {isArabic ? "قسم عمليات الأمن - ينبع" : "Yanbu Security Operations Division"}
+              {isArabic ? "قسم عمليات الأمن" : "Security Operations Division"}
             </p>
           </div>
         </div>
@@ -53,7 +53,7 @@ export const Header = ({ user, onLanguageToggle, isArabic }: HeaderProps) => {
           {isArabic ? "النظام متاح" : "System Operational"}
         </Badge>
         <Badge variant="outline" className="text-muted-foreground">
-          {isArabic ? "المنطقة: ينبع" : "Region: YSOD"}
+          {isArabic ? "المنطقة: الرئيسية" : "Region: Primary"}
         </Badge>
       </div>
 

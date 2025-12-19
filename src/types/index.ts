@@ -1,7 +1,6 @@
-// YSOD Emergency Command Platform - Core Types
-// Saudi Aramco: Company General Use
+// Emergency Command Platform - Core Types
 
-export type SiteCode = 'NGL' | 'COT' | 'YRD' | 'BP' | 'HUB' | 'YST'
+export type SiteCode = 'SITE-A' | 'SITE-B' | 'SITE-C' | 'SITE-D' | 'SITE-E' | 'SITE-F'
 
 export type UserRole = 'IncidentCommander' | 'Dispatcher' | 'FieldResponder' | 'SecuritySupervisor' | 'ComplianceLegal' | 'Viewer'
 
